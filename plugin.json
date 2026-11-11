@@ -1,0 +1,24 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "name": "ffes"
+  },
+  "description": "根据实际目标建立知识地图，筛选关键知识，并通过代表性任务验证掌握程度。",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "category": "Education & Research",
+        "defaultPrompt": [
+          "我想学 Excel 处理订单，请先给我知识地图，再用一个订单汇总任务验证。",
+          "帮我快速理解一个陌生领域，标出先学、按需查和可以暂缓的部分。",
+          "根据我提交的操作结果判断我掌握了什么，只补我实际卡住的地方。"
+        ],
+        "developerName": "ffes",
+        "displayName": "全局认知与高效学习助手",
+        "shortDescription": "画知识地图，抓核心，用真实任务验证"
+      }
+    }
+  },
+  "name": "global-learning-assistant",
+  "version": "0.2.0"
+}
